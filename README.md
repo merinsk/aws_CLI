@@ -9,4 +9,3 @@ Install and configure the AWS CLI.
 Connect the AWS CLI to an AWS account.
 Access IAM by using the AWS CLI.
 After finishing the project, the architecture will reflect as the following diagram:
-
