@@ -56,9 +56,9 @@ Here, I can observe the IAM configuration details for the EC2 instance using the
 - _aws iam list-users_ (A successful test shows a JSON response that includes a list of IAM users in the account)
 
 ## Download the lab_policy document in a JSON-formatted IAM policy document
-Use the AWS CLI Command Reference documentation and AWS CLI to download the lab_policy document in a JSON-formatted IAM policy document. This is the same document that is in the AWS Management Console. 
+Download the lab_policy document in a JSON-formatted IAM policy document without using the AWS Management Console. This is the same document that is in the AWS Management Console. 
 - _aws iam list-policies --scope Local_
-- _aws iam get-policy-version --policy-arn arn:aws:iam::038946776283:policy/lab_policy --version-id v1 > lab_policy.json_
+- _aws iam get-policy-version --policy-arn arn:aws:iam::038946776283:policy/lab_policy --version-id v1 > lab_policy.json_ (use the version number Arn information and DefaultVersionId found inside the lab_policy document to retrieve the JSON IAM policy. Use the > command to save the file. )
 - _ls_
 - _vim lab_policy.json_
 
@@ -67,6 +67,7 @@ Now I have successfully done the following:
 - Installed and configured the AWS CLI.
 - Connected the AWS CLI to an AWS account.
 - Accessed IAM by using the AWS CLI.
+- Downloaded the lab_policy document in a JSON-formatted IAM policy document using SSH
 
 
 
