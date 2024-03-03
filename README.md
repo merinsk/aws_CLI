@@ -12,5 +12,18 @@ After completing this project, I am able to do the following:
 * Connect the AWS CLI to an AWS account.
 + Access IAM by using the AWS CLI.
 
-After finishing the project, the architecture will reflect as the following diagram:
+After finishing the project, the architecture will reflect as follows:
 ![archi_diagram (1)](https://github.com/merinsk/aws_CLI/assets/159441724/b00f136f-94ca-4a8c-aa12-2f92e3c2c4ee)
+
+## Step 1: Connect to the Red Hat EC2 instance by using SSH
+These following steps are specifically for Mac and Linux users:
+- At the top of the AWS Management Console page, choose the  _Details_ dropdown menu, and then choose _Show_. A Credentials window opens.
+- Choose Download PEM, and save the labsuser.pem file.
+- Copy and paste the PublicIP into a text editor to use later. This IP address is the IPv4 server address that you have to connect to.
+- To exit the Details panel, choose the X.
+- Open a terminal window, and change the cd directory to the directory where you downloaded the labsuser.pem file. For example, run the following commands:
+* cd ~/Downloads
+* chmod 400 labsuser.pem
+* ssh -i labsuser.pem ec2-user@<ip-address> (replace <ip-address> with the public IP address that you copied from the previous steps)
+
+## Step 2:
